@@ -6,3 +6,6 @@ Gmail = input("Please enter your Gmail:")
 
 
 print(Name + " " + Last_name + " " + Username + " " + Age + " " + Gmail)
+
+num1=int(input("please enter number"))
+print(num1 ** 2)
