@@ -119,7 +119,7 @@ forward(178)
 left(90)
 color("black")
 forward(150)
-circle(59.25,180)
+circle(59.,180)
 forward(150)
 
 left(90)
