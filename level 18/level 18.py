@@ -171,3 +171,145 @@ try:
     print("Index of 60:", index)
 except ValueError:
     print("Element not found in the list")
+
+
+# insert()
+# მაგალითი 1
+my_list = [1, 2, 3, 4, 5]
+my_list.insert(0, 0)
+print(my_list)  
+
+# მაგალითი 2
+my_list = [1, 2, 4, 5]
+my_list.insert(2, 3)
+print(my_list)
+
+# მაგალითი 3
+my_list = [1, 2, 3, 4]
+my_list.insert(len(my_list), 5)
+print(my_list) 
+
+# მაგალითი 4
+empty_list = []
+empty_list.insert(0, 'first')
+print(empty_list)  
+
+# მაგალითი 5
+my_list = ['apple', 'banana', 'cherry']
+my_list.insert(0, 'orange')
+print(my_list)
+
+
+# Pop
+# მაგალითი 1
+my_list = [1, 2, 3, 4, 5]
+last_element = my_list.pop()
+print(last_element)
+print(my_list)
+
+# მაგალითი 2
+my_list = ['a', 'b', 'c', 'd']
+element_removed = my_list.pop(2)
+print(element_removed) 
+print(my_list)
+
+# მაგალითი 3
+stack = [10, 20, 30, 40, 50]
+popped_value = stack.pop()
+print(f"Popped value: {popped_value}, Remaining stack: {stack}")
+
+# მაგალითი 4
+my_list = ['a', 'b', 'c', 'd', 'e']
+while len(my_list) > 0:
+    popped_element = my_list.pop()
+    print(f"Popped element: {popped_element}, Remaining list: {my_list}")
+
+# მაგალითი 5
+my_list = [1, 2, 3, 4, 5]
+last_element = my_list.pop(-1)
+second_last_element = my_list.pop(-1)
+print(f"Last element: {last_element}, Second last element: {second_last_element}, Remaining list: {my_list}")
+
+
+# Remove
+# მაგალითი 1
+my_list = [1, 2, 3, 4, 3, 5]
+my_list.remove(3)
+print(my_list) 
+
+# მაგალითი 2
+my_list = ['apple', 'banana', 'cherry', 'banana']
+my_list.remove('banana')
+print(my_list)  
+
+# მაგალითი 3
+my_list = ['a', 'b', 'c']
+try:
+    my_list.remove('x')
+except ValueError:
+    print("Element 'x' not found in the list.")
+
+# მაგალითი 4
+my_list = ['a', 'b', 'c', 'b', 'd']
+my_list.remove('b')
+print(my_list)  
+
+# მაგალითი 5
+my_list = [1, 2, 3, 2, 4, 2, 5]
+while 2 in my_list:
+    my_list.remove(2)
+print(my_list) 
+
+
+# Reverse()
+# მაგალითი 1
+my_list = [1, 2, 3, 4, 5]
+my_list.reverse()
+print(my_list)
+
+# მაგალითი 2
+my_list = ['apple', 'banana', 'cherry']
+my_list.reverse()
+print(my_list)  
+
+# მაგალითი 3
+empty_list = []
+empty_list.reverse()
+print(empty_list)  
+
+# მაგალითი 4
+my_list = [1, 2, 3, 2, 1]
+my_list.reverse()
+print(my_list)
+
+# მაგალითი 5
+my_list = [1, 2, 3, 4, 5]
+my_list[1:4] = reversed(my_list[1:4])
+print(my_list) 
+
+
+# sort()
+# მაგალითი 1
+my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5]
+my_list.sort()
+print(my_list) 
+
+# მაგალითი 2
+my_list = ['apple', 'orange', 'banana', 'pear']
+my_list.sort()
+print(my_list)
+
+# მაგალითი 3
+my_list = [(2, 'b'), (1, 'a'), (3, 'c')]
+my_list.sort(key=lambda x: x[1])
+print(my_list) 
+
+# მაგალითი 4
+my_list = [{'name': 'John', 'age': 25}, {'name': 'Jane', 'age': 20}, {'name': 'Doe', 'age': 30}]
+my_list.sort(key=lambda x: x['age'])
+print(my_list) 
+
+# მაგალითი 5
+my_list = [('apple', 2), ('orange', 1), ('banana', 3)]
+my_list.sort(key=lambda x: x[1], reverse=True)
+print(my_list) 
