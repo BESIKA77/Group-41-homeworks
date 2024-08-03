@@ -1,0 +1,27 @@
+/* selectors */
+/* example 1*/
+/* this is selectors */ h1{
+    color: blue;
+    text-align: center;
+}
+
+/* example 2*/
+P {
+    color: rgb(149, 238, 5);
+}
+
+/* example 3*/
+body {   
+    background-color: rgb(230, 11, 59);
+}
+
+/* example 4 */
+button {
+    color: brown;
+}
+
+/* example 5 */
+#p-2 {
+    background-color: rgb(57, 9, 231);
+    text-align: center;
+}

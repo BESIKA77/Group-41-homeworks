@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(251, 255, 4);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    color: blue;
+    font-weight: bolder;
+}
+
+.gender {
+    color: black;
+    font-weight: bolder;
+}
+
+p {
+    color: black;
+    font-weight: bolder;
+}
+
