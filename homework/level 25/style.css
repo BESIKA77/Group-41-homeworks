@@ -1,0 +1,70 @@
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4WrZpj4pj5778t0M64pjIbNKZuSN5Had32Q&s);
+}
+
+h1 {
+    color: rgb(250, 152, 5);
+    text-align: center;
+}
+
+#po {
+    color: green;
+    font-size: xx-large;
+}
+
+#rtu {
+    color: yellow;
+    font-size: xx-large;
+}
+
+#gal {
+    color: red;
+    font-size: xx-large;
+}
+
+#geo {
+    color: white;
+    font-size: xx-large;
+}
+
+#rgia {
+    color: red;
+    font-size: xx-large;
+}
+
+#fr {
+    color: blue;
+    font-size: xx-large;
+}
+
+#an {
+    color: white;
+    font-size: xx-large;
+}
+
+#ce {
+    color: red;
+    font-size: xx-large;
+}
+
+#jap {
+    color: white;
+    font-size: xx-large;
+}
+
+#ann {
+    color: red;
+    font-size: xx-large;
+}
+
+.button-red {
+    color: red;
+}
+
+.button-green {
+    color: green;
+}
+
+.button-blue {
+    color: blue;
+}
