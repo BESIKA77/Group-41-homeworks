@@ -1,0 +1,43 @@
+ul {
+    list-style: square inside none;
+
+    /* list-style-type: square; - ოთხკუთხედად აქცევს
+    list-style-position: inside; - სად არის კ=ოთხკუთხედი
+    list-style-image: none;  - ფოტოს გარეშე*/
+}
+
+ol {
+    list-style: upper-roman;
+}
+
+
+
+
+
+/* 2) შექმენით ფორმა სადაც გექნებათ 2 შესატანი ველი და ერთი ღილაკი,
+ გამოიყენეთ border-radius რომ მოამრგვალოთ ელემენტების კუთხეები,
+  აგრეთვე ინპუთ ელემეტს მოაშორეთ outline,
+   ტექსტები ინფუთში დააშორეთ გვერდებს padding ის დახმარებით
+ */
+
+
+ input, button {
+    border: 1px solid rgb(81, 54, 54);
+    border-radius: 4px;
+ }
+
+input:focus {
+    outline: none;
+}
+
+input {
+    padding: 4px;
+}
+
+
+
+
+
+
+
+
