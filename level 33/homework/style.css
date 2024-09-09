@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgb(58, 90, 232);
+    width: 300px;
+    height: 300px;
+    border-radius: 80px;
+}
+
+.chad {
+    margin-left: 180px;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: pink;
+    border: none;
+    border-radius: 50%;
+}
