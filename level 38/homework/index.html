@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Animation</title>
+    <style>
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: -50px;
+            animation: moveRotateScale 5s infinite alternate ease-in-out;
+        }
+
+        @keyframes moveRotateScale {
+            0% {
+                transform: translate(0, 0) scale(1) rotate(0deg);
+            }
+            25% {
+                transform: translate(-100px, -50px) scale(1.2) rotate(45deg);
+            }
+            50% {
+                transform: translate(50px, -100px) scale(0.8) rotate(90deg);
+            }
+            75% {
+                transform: translate(100px, 100px) scale(1.5) rotate(180deg);
+            }
+            100% {
+                transform: translate(0, 0) scale(1) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-box"></div>
+</body>
+</html>

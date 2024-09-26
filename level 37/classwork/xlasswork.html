@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Examples</title>
+    <style>
+        /* საერთო სტილი კვადრატისთვის */
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 20px;
+        }
+
+        /* 1) როტაცია 45 გრადუსით */
+        .rotate {
+            transform: rotate(45deg);
+        }
+
+        /* 2) მასშტაბირება 1.5-ჯერ */
+        .scale {
+            transform: scale(1.5);
+        }
+
+        /* 3) გადანაცვლება X და Y ღერძებზე */
+        .translate {
+            transform: translate(50px, 30px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1) როტაცია -->
+    <div class="square rotate"></div>
+
+    <!-- 2) მასშტაბირება -->
+    <div class="square scale"></div>
+
+    <!-- გადანაცვლება -->
+    <div class="square translate"></div>
+
+</body>
+</html>
