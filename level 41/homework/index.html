@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Example</title>
+    <style>
+        p {
+            font-size: 16px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Change Image and Properties</h1>
+
+    <!-- Image element -->
+    <img id="myImage" src="https://via.placeholder.com/300" alt="Initial Image" width="300" height="200">
+    <br><br>
+
+    <!-- Buttons for changing image source -->
+    <button id="redImageButton">Change to Red</button>
+    <button id="greenImageButton">Change to Green</button>
+    <br><br>
+
+    <!-- Paragraph element -->
+    <p id="myParagraph">This is a paragraph.</p>
+
+    <!-- Button for changing properties -->
+    <button id="changePropertiesButton">Change Properties</button>
+
+    <script>
+        // Change image source on button click
+        document.getElementById('redImageButton').onclick = function() {
+            document.getElementById('myImage').src = 'https://via.placeholder.com/300x200/ff0000';
+        }
+
+        document.getElementById('greenImageButton').onclick = function() {
+            document.getElementById('myImage').src = 'https://via.placeholder.com/300x200/00ff00';
+        }
+
+        // Change element properties on button click
+        document.getElementById('changePropertiesButton').onclick = function() {
+            // Change paragraph properties
+            let paragraph = document.getElementById('myParagraph');
+            paragraph.style.color = 'blue';
+            paragraph.style.fontSize = '20px';
+            paragraph.style.fontWeight = 'bold';
+            paragraph.innerHTML = 'Paragraph text has changed!';
+            paragraph.style.border = '2px solid black';
+
+            // Change image properties
+            let image = document.getElementById('myImage');
+            image.src = 'https://via.placeholder.com/150x150/0000ff';
+            image.alt = 'New Image';
+            image.width = 200;
+            image.height = 200;
+            image.style.border = '2px solid green';
+
+            // Change button properties
+            let button = document.getElementById('changePropertiesButton');
+            button.style.backgroundColor = 'yellow';
+            button.style.border = '2px solid red';
+            button.innerHTML = 'Properties Changed!';
+            button.style.color = 'green';
+            button.style.padding = '10px';
+        }
+    </script>
+
+</body>
+</html>
