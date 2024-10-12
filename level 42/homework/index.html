@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Task</title>
+    <script>
+        // 2) Internal JavaScript: სხვადასხვა JavaScript-ის ტიპები
+        // ეს არის Internal JavaScript-ის მაგალითი
+        function showInternalMessage() {
+            alert("This is Internal JavaScript");
+        }
+
+        // 3) ღილაკზე დაკლიკებისას გამაფრთხილებელი მესიჯის ჩვენება
+        function showAlert() {
+            alert("Button Clicked");
+        }
+
+        // 4) ცვლადების გამოყენება და მათზე მათემატიკური ოპერაციების ჩატარება
+        function calculateNumbers() {
+            // ვქმნით ორ ცვლადს და მათ ვანიჭებთ რიცხვებს
+            let num1 = 10; // პირველი რიცხვი
+            let num2 = 5;  // მეორე რიცხვი
+
+            // ვაკეთებთ მათემატიკურ ოპერაციებს
+            let sum = num1 + num2;       // შეკრება
+            let difference = num1 - num2; // გამოკლება
+            let product = num1 * num2;   // გამრავლება
+            let quotient = num1 / num2;  // გაყოფა
+
+            // შედეგების გამოტანა alert-ით
+            alert("Sum: " + sum + "\nDifference: " + difference + "\nProduct: " + product + "\nQuotient: " + quotient);
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Combined Task</h1>
+
+    <!-- 2) Inline JavaScript-ის მაგალითი -->
+    <!-- ეს ღილაკი უშუალოდ HTML-ში შეიცავს JavaScript კოდს -->
+    <button onclick="alert('This is Inline JavaScript')">Click for Inline JS</button>
+
+    <br><br>
+
+    <!-- Internal JavaScript-ის მაგალითი -->
+    <button onclick="showInternalMessage()">Click for Internal JS</button>
+
+    <br><br>
+
+    <!-- 3) ღილაკი, რომლის დაკლიკებისას გამაფრთხილებელი მესიჯი ჩნდება -->
+    <button onclick="showAlert()">Click for Alert</button>
+
+    <br><br>
+
+    <!-- 4) ღილაკი, რომელიც ჩაატარებს მათემატიკურ ოპერაციებს -->
+    <button onclick="calculateNumbers()">Click for Math Operations</button>
+
+</body>
+</html>
