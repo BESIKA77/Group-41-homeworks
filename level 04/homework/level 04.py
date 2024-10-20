@@ -1,4 +1,4 @@
-sfrom turtle import *
+from turtle import *
 
 
 # beso's castle code
