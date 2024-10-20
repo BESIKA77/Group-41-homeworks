@@ -28,5 +28,216 @@
 </body>
 </html>
 
+<!-- relative 2 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Relative Position Example 2</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 200px;
+            background-color: lightblue;
+            padding: 20px;
+            position: relative;
+        }
+        .relative-box {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="relative-box"></div>
+    </div>
+</body>
+</html>
 
 
+
+
+
+
+<!-- absolute -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Absolute Position Example 1</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 200px;
+            background-color: lightgray;
+            position: relative;
+        }
+        .absolute-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="absolute-box"></div>
+    </div>
+</body>
+</html>
+
+<!-- absolute 2 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Absolute Position Example 2</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 300px;
+            background-color: lightblue;
+            position: relative;
+        }
+        .absolute-box {
+            width: 150px;
+            height: 150px;
+            background-color: orange;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="absolute-box"></div>
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- sticky -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sticky Position Example 1</title>
+    <style>
+        .header {
+            background-color: teal;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+        }
+        .content {
+            height: 200vh;
+            padding: 20px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Sticky Header (Stays at the top when scrolling down)
+    </div>
+    <div class="content">
+        Scroll down to see the sticky effect.
+    </div>
+</body>
+</html>
+
+<!-- sticky2 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sticky Position Example 2</title>
+    <style>
+        .sidebar {
+            background-color: darkorange;
+            padding: 10px;
+            width: 200px;
+            height: 100px;
+            position: sticky;
+            top: 20px;
+        }
+        .content {
+            padding: 10px;
+            height: 200vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        Sticky Sidebar
+    </div>
+    <div class="content">
+        Content goes here. Scroll to see the sidebar stay in place.
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- fixed -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fixed Position Example 1</title>
+    <style>
+        .fixed-box {
+            width: 100%;
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-box">
+        I stay fixed at the top of the page
+    </div>
+    <p>Scroll the page to see the effect.</p>
+    <p style="margin-top: 200vh;">End of content.</p>
+</body>
+</html>
+
+<!-- fixed 2 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fixed Position Example 2</title>
+    <style>
+        .fixed-box {
+            width: 200px;
+            height: 100px;
+            background-color: crimson;
+            color: white;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>Scroll down to see the fixed box at the bottom right corner.</p>
+    <p style="margin-top: 150vh;">End of content.</p>
+    <div class="fixed-box">
+        Fixed at bottom-right
+    </div>
+</body>
+</html>
