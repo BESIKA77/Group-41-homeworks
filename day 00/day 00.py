@@ -4,7 +4,8 @@ from turtle import *
 #I want to pait a house
 
 #step 1:draw a square
-speed(5)
+
+speed(3)
 width(6)
 color("purple")
 begin_fill()

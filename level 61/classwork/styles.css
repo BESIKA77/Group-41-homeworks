@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Grow effect on hover */
+.square:hover {
+    transform: scale(1.2);
+}
+
+/* Rotate effect */
+.square.rotate:hover {
+    transform: rotate(45deg);
+}
+
+/* Translate effect */
+.square.translate:hover {
+    transform: translateX(100px);
+}
+
+/* Skew effect */
+.square.skew:hover {
+    transform: skew(20deg, 10deg);
+}

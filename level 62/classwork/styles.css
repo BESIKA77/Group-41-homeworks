@@ -1,0 +1,17 @@
+/* Button hover effect */
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2980b9;
+    transform: scale(2) translateX(200px); /* Resize and move on X axis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
