@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კონტაქტი</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>დამიკავშირდი</h1>
+    <p>გისურვებთ მეტი ინფორმაციის მიღებას?</p>
+</header>
+
+<section id="contact-form">
+    <h2>დაგვიკავშირდით</h2>
+    <form action="submit_form.php" method="POST">
+        <div class="form-group">
+            <label for="name">თქვენი სახელი:</label>
+            <input type="text" id="name" name="name" placeholder="გთხოვთ შეიყვანოთ სახელი" required>
+        </div>
+        <div class="form-group">
+            <label for="email">თქვენი ელექტრონული ფოსტა:</label>
+            <input type="email" id="email" name="email" placeholder="შეიყვანეთ ელ. ფოსტა" required>
+        </div>
+        <div class="form-group">
+            <label for="message">თქვენი შეტყობინება:</label>
+            <textarea id="message" name="message" placeholder="თქვენი შეტყობინება" required></textarea>
+        </div>
+        <button type="submit" class="cta-button">გაგზავნა</button>
+    </form>
+</section>
+
+<section id="social-media">
+    <h3>გადახედეთ ჩემს პროფილებს</h3>
+    <div class="social-links">
+        <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a>
+        <a href="https://www.linkedin.com/yourprofile" target="_blank">LinkedIn</a>
+        <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+    </div>
+</section>
+
+</body>
+</html>

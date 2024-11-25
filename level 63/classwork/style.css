@@ -1,0 +1,18 @@
+/* Keyframes for the animation */
+@keyframes example {
+    0% {background-color: red; left: 0;}
+    50% {background-color: yellow; left: 50%;}
+    100% {background-color: green; left: 100%;}
+  }
+  
+  /* Styling the animated box */
+  .animated-box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
