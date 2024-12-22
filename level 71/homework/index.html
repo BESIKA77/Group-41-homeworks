@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>homework</title>
+  <style>
+    /* 1. Transform Example */
+    .rotate {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      transition: transform 1s;
+    }
+
+    .rotate:hover {
+      transform: rotate(45deg);
+    }
+
+    /* 2. Transition Example */
+    .color-change {
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+      transition: background-color 1s;
+    }
+
+    .color-change:hover {
+      background-color: yellow;
+    }
+
+    /* 3. Animation Example */
+    @keyframes move {
+      0% { left: 0; }
+      100% { left: 200px; }
+    }
+
+    .animate {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      animation: move 2s infinite alternate;
+    }
+
+    /* 4. Flexbox Example */
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: purple;
+    }
+
+    /* 5. Grid Example */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .grid-item {
+      height: 100px;
+      background-color: orange;
+    }
+
+    /* 6. Responsive Example */
+    .responsive-container {
+      background-color: lightblue;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .responsive-container {
+        background-color: lightgreen;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .responsive-container {
+        background-color: lightcoral;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h2>CSS Features Examples</h2>
+
+  <!-- 1. Transform -->
+  <div class="rotate"></div>
+
+  <!-- 2. Transition -->
+  <div class="color-change"></div>
+
+  <!-- 3. Animation -->
+  <div class="animate"></div>
+
+  <!-- 4. Flexbox -->
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <!-- 5. Grid -->
+  <div class="grid-container">
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+  </div>
+
+  <!-- 6. Responsive -->
+  <div class="responsive-container">
+    Resize the browser window to see the effect.
+  </div>
+
+</body>
+</html>
