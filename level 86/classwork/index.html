@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>Simple Calculator</h1>
+  <div>
+    <input id="num1" type="number" placeholder="Enter first number">
+    <input id="num2" type="number" placeholder="Enter second number">
+    <select id="operation">
+      <option value="add">Addition</option>
+      <option value="subtract">Subtraction</option>
+      <option value="multiply">Multiplication</option>
+      <option value="divide">Division</option>
+    </select>
+    <button onclick="calculate()">Calculate</button>
+    <p id="result"></p>
+  </div>
+
+  <h2>Other Functions</h2>
+  <div>
+    <input id="checkNumber" type="number" placeholder="Enter a number">
+    <button onclick="checkEvenOdd()">Check Even or Odd</button>
+    <p id="evenOddResult"></p>
+
+    <button onclick="squareNumber()">Calculate Square</button>
+    <p id="squareResult"></p>
+
+    <button onclick="checkNumberSign()">Check Number Sign</button>
+    <p id="signResult"></p>
+  </div>
+</body>
+</html>

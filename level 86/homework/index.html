@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+    }
+    input, button {
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Calculator</h1>
+    <div>
+      <input id="num1" type="number" placeholder="Enter first number">
+      <input id="num2" type="number" placeholder="Enter second number">
+      <select id="operation">
+        <option value="add">Addition</option>
+        <option value="subtract">Subtraction</option>
+        <option value="multiply">Multiplication</option>
+        <option value="divide">Division</option>
+      </select>
+      <button onclick="calculate()">Calculate</button>
+      <p id="result"></p>
+    </div>
+
+    <h2>Other Functions</h2>
+    <div>
+      <input id="checkNumber" type="number" placeholder="Enter a number">
+      <button onclick="checkEvenOdd()">Check Even or Odd</button>
+      <p id="evenOddResult"></p>
+
+      <button onclick="squareNumber()">Calculate Square</button>
+      <p id="squareResult"></p>
+
+      <button onclick="checkNumberSign()">Check Number Sign</button>
+      <p id="signResult"></p>
+    </div>
+  </div>
+
+  <script>
+    function calculate() {
+      const num1 = parseFloat(document.getElementById('num1').value);
+      const num2 = parseFloat(document.getElementById('num2').value);
+      const operation = document.getElementById('operation').value;
+      let result;
+
+      if (isNaN(num1) || isNaN(num2)) {
+        result = 'Please enter valid numbers';
+      } else {
+        if (operation === 'add') {
+          result = num1 + num2;
+        } else if (operation === 'subtract') {
+          result = num1 - num2;
+        } else if (operation === 'multiply') {
+          result = num1 * num2;
+        } else if (operation === 'divide') {
+          result = num2 !== 0 ? num1 / num2 : 'Error: Division by zero is not allowed';
+        } else {
+          result = 'Invalid operation';
+        }
+      }
+
+      document.getElementById('result').textContent = `Result: ${result}`;
+    }
+
+    function checkEvenOdd() {
+      const num = parseInt(document.getElementById('checkNumber').value);
+      if (isNaN(num)) {
+        document.getElementById('evenOddResult').textContent = 'Please enter a valid number';
+        return;
+      }
+
+      const result = num % 2 === 0 ? 'This number is even' : 'This number is odd';
+      document.getElementById('evenOddResult').textContent = result;
+    }
+
+    function squareNumber() {
+      const num = parseFloat(document.getElementById('checkNumber').value);
+      if (isNaN(num)) {
+        document.getElementById('squareResult').textContent = 'Please enter a valid number';
+        return;
+      }
+
+      const result = num * num;
+      document.getElementById('squareResult').textContent = `Square: ${result}`;
+    }
+
+    function checkNumberSign() {
+      const num = parseFloat(document.getElementById('checkNumber').value);
+      if (isNaN(num)) {
+        document.getElementById('signResult').textContent = 'Please enter a valid number';
+        return;
+      }
+
+      let result;
+      if (num > 0) {
+        result = 'The number is positive';
+      } else if (num < 0) {
+        result = 'The number is negative';
+      } else {
+        result = 'The number is zero';
+      }
+
+      document.getElementById('signResult').textContent = result;
+    }
+  </script>
+</body>
+</html>
