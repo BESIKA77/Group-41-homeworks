@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TailwindCSS Practice</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Base - შეცვლილი სტილები */
+    @tailwind base;
+    h1 {
+      @apply text-3xl font-bold text-gray-700;
+    }
+    p {
+      @apply text-base text-gray-600;
+    }
+
+    /* Components - მზა კომპონენტების განსაზღვრა */
+    @tailwind components;
+    .card {
+      @apply bg-white shadow-md rounded-lg p-4 hover:shadow-lg transition duration-300 ease-in-out;
+    }
+
+    /* Utilities - გამოყენებითი კლასები */
+    @tailwind utilities;
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header Section -->
+  <header class="bg-blue-600 text-white text-center py-4">
+    <h1>TailwindCSS ვებსაიტის მაგალითი</h1>
+  </header>
+
+  <!-- Main Section -->
+  <main class="container mx-auto my-8">
+    <!-- Grid Example -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="card">
+        <h2 class="text-xl font-semibold mb-2">Grid ელემენტი 1</h2>
+        <p>ეს არის Grid სისტემის მაგალითი.</p>
+      </div>
+      <div class="card">
+        <h2 class="text-xl font-semibold mb-2">Grid ელემენტი 2</h2>
+        <p>ეს არის Grid სისტემის მაგალითი.</p>
+      </div>
+      <div class="card">
+        <h2 class="text-xl font-semibold mb-2">Grid ელემენტი 3</h2>
+        <p>ეს არის Grid სისტემის მაგალითი.</p>
+      </div>
+    </section>
+
+    <!-- Flex Example -->
+    <section class="flex flex-col md:flex-row justify-between items-center mt-8">
+      <div class="card w-full md:w-1/3">
+        <h2 class="text-xl font-semibold mb-2">Flex ელემენტი 1</h2>
+        <p>ეს არის Flex სისტემის მაგალითი.</p>
+      </div>
+      <div class="card w-full md:w-1/3">
+        <h2 class="text-xl font-semibold mb-2">Flex ელემენტი 2</h2>
+        <p>ეს არის Flex სისტემის მაგალითი.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
